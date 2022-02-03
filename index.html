@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <div class="calculadora">
         <div class="calculadora__display">
-          <div id="calculadora__valorAnterior"></div>
-          <div id="calculadora__valorActual"></div>
+          <div id="calculadora__valor-anterior"> </div>
+          <div id="calculadora__valor-actual"> </div>
         </div>
-        <button class="calculadora__columna-2 calculadora__button">C</button>
+        <button class="calculadora__button calculadora__button--columna-2">C</button>
         <button class="calculadora__button">←</button>
-        <button class="calculadora__numero calculadora__button">%</button>
-        <button class="calculadora__numero calculadora__button">7</button>
-        <button class="calculadora__numero calculadora__button">8</button>
-        <button class="calculadora__numero calculadora__button">9</button>
-        <button class="calculadora__operador calculadora__button">X</button>
-        <button class="calculadora__numero calculadora__button">4</button>
-        <button class="calculadora__numero calculadora__button">5</button>
-        <button class="calculadora__numero calculadora__button">6</button>
-        <button class="calculadora__operador calculadora__button">-</button>
-        <button class="calculadora__numero calculadora__button">1</button>
-        <button class="calculadora__numero calculadora__button">2</button>
-        <button class="calculadora__numero calculadora__button">3</button>
-        <button class="calculadora__operador calculadora__button">+</button>
-        <button
-          class="calculadora__numero calculadora__columna-2 calculadora__button"
-        >
-          0
-        </button>
-        <button class="calculadora__numero calculadora__button">.</button>
-        <button class="calculadora__operador calculadora__button">=</button>
+        <button class="calculadora__button calculadora__button--numero">%</button>
+        <button class="calculadora__button calculadora__button--numero" data="hola">7</button>
+        <button class="calculadora__button calculadora__button--numero">8</button>
+        <button class="calculadora__button calculadora__button--numero">9</button>
+        <button class="calculadora__button calculadora__button--operador">X</button>
+        <button class="calculadora__button calculadora__button--numero">4</button>
+        <button class="calculadora__button calculadora__button--numero">5</button>
+        <button class="calculadora__button calculadora__button--numero">6</button>
+        <button class="calculadora__button calculadora__button--operador">-</button>
+        <button class="calculadora__button calculadora__button--numero">1</button>
+        <button class="calculadora__button calculadora__button--numero">2</button>
+        <button class="calculadora__button calculadora__button--numero">3</button>
+        <button class="calculadora__button calculadora__button--operador">+</button>
+        <button class="calculadora__button calculadora__button--numero calculadora__button--columna-2">0</button>
+        <button class="calculadora__button calculadora__button--numero">.</button>
+        <button class="calculadora__button calculadora__button--operador">=</button>
       </div>
     </div>
   </body>
+  <script src="Display.js"></script>
   <script src="Calculadora.js"></script>
   <script src="index.js"></script>
 </html>

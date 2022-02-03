@@ -1,13 +1,10 @@
-const valorAnterior = document.getElementById(`.calculadora__valorAnterior`);
-const valorActual = document.getElementById(`.calculadora__valorActual`);
-const botonesNumeros = document.querySelectorAll(`.calculadora__numero`);
-const botonesOperadores = document.querySelectorAll(`.calculadora__operador`);
+const valorAnterior = document.querySelector(`calculadora__valor-anterior`);
+const valorActual = document.querySelector(`calculadora__valor-actual`);
+const botonesNumeros = document.querySelectorAll(`calculadora__numero`);
+const botonesOperadores = document.querySelectorAll(`calculadora__operador`);
 
+const $display = new display(valorAnterior, valorActual);
 
-const calculadora = new Calculadora();
-
-
-console.log(calculadora.sumar(2, 3));
-console.log(calculadora.restar(2, 3));
-console.log(calculadora.multiplicar(2, 3));
-console.log(calculadora.dividir(2, 3));
+botonesNumeros.forEach(boton => {
+	boton.addEventListener(`click`, () => display.agregarNumero(boton.innerHTML));
+});

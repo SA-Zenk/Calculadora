@@ -34,11 +34,11 @@ body {
   background-color: #00916e;
   box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
 }
+.calculadora__button--columna-2 {
+  grid-column: span 2;
+}
 .calculadora__button:active {
   background-color: #006f54;
-}
-.calculadora__columna-2 {
-  grid-column: span 2;
 }
 .calculadora__display {
   grid-column: 1/-1;
