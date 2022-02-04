@@ -10,26 +10,26 @@ html(lang='en')
     .container
       .calculadora
         .calculadora__display
-          #calculadora__valor-anterior  
-          #calculadora__valor-actual  
-        button.calculadora__button.calculadora__button--columna-2 C
-        button.calculadora__button ←
-        button.calculadora__button.calculadora__button--numero %
+          #calculadora__valor-anterior
+          #calculadora__valor-actual
+        button.calculadora__button.calculadora__button--columna-2(onclick="display.borrarTodo()") C
+        button.calculadora__button(onclick="display.borrar()") ←
+        button.calculadora__button.calculadora__button--numero(value="dividir") %
         button.calculadora__button.calculadora__button--numero(data="hola") 7
         button.calculadora__button.calculadora__button--numero 8
         button.calculadora__button.calculadora__button--numero 9
-        button.calculadora__button.calculadora__button--operador X
+        button.calculadora__button.calculadora__button--operador(value="multiplicar") X
         button.calculadora__button.calculadora__button--numero 4
         button.calculadora__button.calculadora__button--numero 5
         button.calculadora__button.calculadora__button--numero 6
-        button.calculadora__button.calculadora__button--operador -
+        button.calculadora__button.calculadora__button--operador(value="restar") -
         button.calculadora__button.calculadora__button--numero 1
         button.calculadora__button.calculadora__button--numero 2
         button.calculadora__button.calculadora__button--numero 3
-        button.calculadora__button.calculadora__button--operador +
+        button.calculadora__button.calculadora__button--operador(value="sumar") +
         button.calculadora__button.calculadora__button--numero.calculadora__button--columna-2 0
         button.calculadora__button.calculadora__button--numero .
-        button.calculadora__button.calculadora__button--operador =
+        button.calculadora__button.calculadora__button--operador(value="igual") =
   script(src="Display.js")
   script(src="Calculadora.js")
   script(src="index.js")
